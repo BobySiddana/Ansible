@@ -4,10 +4,10 @@
   vars:
     persons: "vijay,tony,jayanth,subhash"
   tasks:
-  # - name: print undefined variable
-  #   ansible.builtin.debug:
-  #     msg: "Hello,{{ person | default('vijay')}}"
+  - name: print undefined variable
+    ansible.builtin.debug:
+      msg: "Hello,{{ person | default('vijay')}}"
 
   - name: print names
     ansible.builtin.debug:
-      msg: "Hello,{{ person | split(',') }}"    
+      msg: "Hello,{{ persons | split(',') }}"    
