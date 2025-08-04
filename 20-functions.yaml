@@ -32,12 +32,12 @@
 
   - name: convert to uppercase
     vars:
-      name: "Sivakumar Reddy M"
+      name: "jayanth s"
     ansible.builtin.debug:
       msg: "Hello {{ name | upper }}"
 
   - name: convert to lowercase
     vars:
-      name: "Sivakumar Reddy M"
+      name: "jayanth s"
     ansible.builtin.debug:
       msg: "Hello {{ name | lower }}"               
